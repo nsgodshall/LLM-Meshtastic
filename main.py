@@ -28,7 +28,7 @@ class BoneClown:
         message = response.json()["message"]["content"].split("</think>")[-1]
 
         message_shortened = message[:255]
-        return message
+        return message_shortened
 
 
 def run():
